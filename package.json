@@ -1,0 +1,52 @@
+{
+  "name": "cadeira-frontend",
+  "description": "Online store frontend written in Next.js, TypeScript, SCSS modules",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "format": "prettier --check \"**/*.{ts,tsx,css,scss,md,json}\"",
+    "format:fix": "prettier --write \"**/*.{ts,tsx,css,scss,md,json}\"",
+    "lint": "eslint src/**/*.{tsx,ts} --config ./.eslintrc --ignore-path ./.gitignore",
+    "lint:fix": "eslint --fix src/**/*.{tsx,ts} --config ./.eslintrc --ignore-path ./.gitignore",
+    "stylelint": "stylelint **/*.{scss,css}",
+    "stylelint:fix": "stylelint --fix **/*.{scss,css}",
+    "pre-commit": "lint-staged",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@types/node": "18.15.3",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "eslint": "^8.36.0",
+    "eslint-config-next": "13.2.4",
+    "next": "^13.2.4",
+    "normalize.css": "^8.0.1",
+    "react": "^18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.59.3",
+    "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "classnames": "^2.3.2",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.5",
+    "stylelint": "^15.3.0",
+    "stylelint-config-sass-guidelines": "^10.0.0",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-order": "^6.0.3"
+  }
+}

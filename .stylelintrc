@@ -1,0 +1,18 @@
+{
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-sass-guidelines"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "selector-class-pattern": "^.*$",
+    "declaration-block-no-redundant-longhand-properties": [
+      true,
+      {
+        "ignoreShorthands": ["grid-*"]
+      }
+    ],
+    "max-nesting-depth": 3,
+    "no-unknown-animations": true,
+    "order/properties-alphabetical-order": true
+  },
+  "ignoreFiles": ["**/*.js", "**/*.jsx"],
+  "defaultSeverity": "warning"
+}
