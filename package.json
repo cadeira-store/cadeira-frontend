@@ -1,52 +1,86 @@
 {
   "name": "cadeira-frontend",
-  "description": "Online store frontend written in Next.js, TypeScript, SCSS modules",
+  "description": "Furniture store frontend",
   "version": "0.1.0",
   "private": true,
+  "dependencies": {
+    "@next/font": "13.1.6",
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.2",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
+    "prepare": "husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "format": "prettier --check \"**/*.{ts,tsx,css,scss,md,json}\"",
     "format:fix": "prettier --write \"**/*.{ts,tsx,css,scss,md,json}\"",
-    "lint": "eslint src/**/*.{tsx,ts} --config ./.eslintrc --ignore-path ./.gitignore",
-    "lint:fix": "eslint --fix src/**/*.{tsx,ts} --config ./.eslintrc --ignore-path ./.gitignore",
+    "lint": "eslint src/**/*.{tsx,ts} --config ./.eslintrc.json --ignore-path ./.gitignore",
+    "lint:fix": "eslint --fix src/**/*.{tsx,ts} --config ./.eslintrc.json --ignore-path ./.gitignore",
     "stylelint": "stylelint **/*.{scss,css}",
-    "stylelint:fix": "stylelint --fix **/*.{scss,css}",
-    "pre-commit": "lint-staged",
-    "prepare": "husky install"
+    "stylelint:fix": "stylelint --fix **/*.{scss,css}"
   },
-  "dependencies": {
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.37.0",
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.59.1",
+    "classnames": "^2.3.2",
     "eslint": "^8.36.0",
     "eslint-config-next": "13.2.4",
-    "next": "^13.2.4",
-    "normalize.css": "^8.0.1",
-    "react": "^18.2.0",
-    "react-dom": "18.2.0",
-    "sass": "^1.59.3",
-    "typescript": "5.0.2"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^17.4.4",
-    "@commitlint/config-conventional": "^17.4.4",
-    "@typescript-eslint/eslint-plugin": "^5.55.0",
-    "classnames": "^2.3.2",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.7.0",
-    "eslint-plugin-jest": "^27.2.1",
+    "eslint-import-resolver-node": "^0.3.7",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-markdown": "^3.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prefer-let": "^3.0.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-testing-library": "^5.10.3",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.0",
-    "prettier": "^2.8.5",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.8.8",
+    "sass": "^1.59.3",
     "stylelint": "^15.3.0",
-    "stylelint-config-sass-guidelines": "^10.0.0",
     "stylelint-config-standard-scss": "^7.0.1",
     "stylelint-order": "^6.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }

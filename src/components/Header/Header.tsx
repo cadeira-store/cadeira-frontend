@@ -1,7 +1,7 @@
 import cn from 'classnames';
 
 import styles from './Header.module.scss';
-import { HeaderProps } from './Header.props';
+import type { HeaderProps } from './Header.props';
 
 export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
   return (

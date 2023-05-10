@@ -1,5 +1,5 @@
 {
-  "extends": ["stylelint-config-standard-scss", "stylelint-config-sass-guidelines"],
+  "extends": ["stylelint-config-standard-scss"],
   "plugins": ["stylelint-order"],
   "rules": {
     "selector-class-pattern": "^.*$",
@@ -13,6 +13,6 @@
     "no-unknown-animations": true,
     "order/properties-alphabetical-order": true
   },
-  "ignoreFiles": ["**/*.js", "**/*.jsx"],
+  "ignoreFiles": ["**/*.ts", "**/*.tsx"],
   "defaultSeverity": "warning"
 }
