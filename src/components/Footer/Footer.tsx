@@ -1,7 +1,10 @@
 import cn from 'classnames';
 
+import type { DetailedHTMLProps, HTMLAttributes } from 'react';
 import styles from './Footer.module.scss';
-import type { FooterProps } from './Footer.props';
+
+export interface FooterProps
+  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 export const Footer = ({ className, ...props }: FooterProps): JSX.Element => {
   return (

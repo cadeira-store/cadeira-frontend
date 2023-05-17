@@ -1,7 +1,10 @@
 import cn from 'classnames';
 
+import type { DetailedHTMLProps, HTMLAttributes } from 'react';
 import styles from './Header.module.scss';
-import type { HeaderProps } from './Header.props';
+
+export interface HeaderProps
+  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
 
 export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
   return (

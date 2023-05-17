@@ -19,11 +19,7 @@
     ],
     "baseUrl": "src",
     "paths": {
-      "@/*": ["./*"],
-      "@/components": ["./components"],
-      "@/components/*": ["./components/*"],
-      "@/layout/*": ["./layout/*"],
-      "@/utils/*": ["./utils/*"]
+      "@/*": ["./*"]
     },
     "allowJs": true,
     "skipLibCheck": true

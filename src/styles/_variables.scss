@@ -1,0 +1,39 @@
+// Screen sizes
+$screen-sm: 319px;
+$screen-md: 767px;
+$screen-lg: 1279px;
+
+// Colors
+$color-primary: rgb(176 151 106 / 100%); /* #B0976A */
+$color-primary-hover: rgb(153 126 77 / 100%); /* #997E4D */
+
+$color-disabled: rgb(191 191 191 / 100%); /* #bfbfbf */
+$color-disabled-secondary: rgb(245 245 245 / 100%); /* #f5f5f5 */
+
+$color-text: rgb(51 51 51 / 100%); /* #333 */
+
+/* Gray */
+$color-dark-gray: rgb(185 181 181 / 100%); /* #B9B5B5 */
+$color-light-gray: rgb(228 228 228 / 100%); /* #e4e4e4 */
+$color-suit-gray: rgb(142 142 147 / 100%); /* #8e8e93 */
+
+/* Violet */
+$color-light-violet: rgb(126 87 194 / 100%); /* #7E57C2 */
+$color-dark-violet: rgb(101 45 187 / 100%); /* #652DBB */
+
+/* Red */
+$color-red: rgb(227 18 53 / 100%); /* #e31235 */
+$color-light-red: rgb(251 228 227 / 100%); /* #fbe4e3 */
+$color-light-red-hover: rgb(250 219 218 / 100%); /* #fadbda */
+
+/* Other */
+$color-bg-input: rgb(236 241 247 / 100%); /* #ecf1f7 */
+$color-bg-input-hover: rgb(228 235 243 / 100%); /* #e4ebf3 */
+
+// Shadows
+$shadow-black: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 20px rgb(0 0 0 / 8%);
+$shadow-card: 0 5px 25px rgb(0.3 0.31 0.33 / 12%);
+$shadow-bottom: rgb(33 35 38 / 10%) 0 10px 10px -10px;
+$shadow-form: 0 1px 20px rgb(4 6 28 / 10%);
+$shadow-sliderArrow: 0 0.1rem 2rem rgb(4 6 28 / 10%);
+$shadow-perimeter: rgb(14 30 37 / 12%) 0 2px 4px 0, rgb(14 30 37 / 32%) 0 2px 16px 0;

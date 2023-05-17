@@ -1,0 +1,30 @@
+// Breakpoints
+@mixin sm-min-breakpoint {
+  @media (min-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+@mixin md-min-breakpoint {
+  @media (min-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+@mixin lg-min-breakpoint {
+  @media (min-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+@mixin custom-min-break-point($size) {
+  @media (min-width: ($size + 'px')) {
+    @content;
+  }
+}
+
+@mixin custom-max-breakpoint($size) {
+  @media (max-width: ($size + 'px')) {
+    @content;
+  }
+}

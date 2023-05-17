@@ -1,12 +1,19 @@
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin', 'cyrillic'], weight: '400' });
+import Link from 'next/link';
+import styles from '@/styles/page.module.scss';
 
 export default function Home() {
   return (
     <>
-      <h1>Title</h1>
-      <div className={inter.className}>Hello World! Тест работы</div>
+      <h1 className={styles.title}>Title</h1>
+      <div>Hello World! Тест работы</div>
+      <ul>
+        <li>
+          <Link href="/categories">Категории</Link>
+        </li>
+        <li>
+          <Link href="/products">Товар</Link>
+        </li>
+      </ul>
     </>
   );
 }
